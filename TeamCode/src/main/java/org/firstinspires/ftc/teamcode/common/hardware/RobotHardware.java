@@ -26,11 +26,11 @@ public class RobotHardware {
 
     public DcMotor motorbl = null;
 
-    public DcMotor liftHex = null;
+  //  public DcMotor liftHex = null;
 
-    public DcMotor liftArm = null;
+  //  public DcMotor liftArm = null;
 
-    public DcMotor launcher = null;
+  //  public DcMotor launcher = null;
 
     //public DcMotor linearSlider = null;
 
@@ -39,11 +39,11 @@ public class RobotHardware {
     //public DistanceSensor distanceL = null;
 
 
-    public Servo tiltServoRight = null;
-    public Servo grabServoRight = null;
+   // public Servo tiltServoRight = null;
+  //  public Servo grabServoRight = null;
 
-    public Servo tiltServoLeft = null;
-    public Servo grabServoLeft = null;
+   // public Servo tiltServoLeft = null;
+   // public Servo grabServoLeft = null;
 
 
     //public Servo airplaneLauncher = null;
@@ -75,8 +75,8 @@ public class RobotHardware {
         motorbr = hwMap.get(DcMotor.class, "motorbr");
         //launcher = hwMap.get(DcMotor.class, "launcher");
 
-        liftHex = hwMap.get(DcMotor.class, "liftHex");
-        liftArm = hwMap.get(DcMotor.class, "liftArm");
+      //  liftHex = hwMap.get(DcMotor.class, "liftHex");
+      //  liftArm = hwMap.get(DcMotor.class, "liftArm");
 
         // set Brake zero power behavior
         motorfr.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
@@ -92,8 +92,8 @@ public class RobotHardware {
         //airplaneLauncher = hwMap.get(Servo.class, "feeder");
         //tiltServoRight = hwMap.get(Servo.class, "tiltServoR");
         //grabServoRight = hwMap.get(Servo.class, "grabServoR");
-        tiltServoLeft = hwMap.get(Servo.class, "tiltServoL");
-        grabServoLeft = hwMap.get(Servo.class, "grabServoL");
+       // tiltServoLeft = hwMap.get(Servo.class, "tiltServoL");
+      // grabServoLeft = hwMap.get(Servo.class, "grabServoL");
         //autoPixel.setPosition(0.5);
         //boardPixel.setPosition(0);
         //grabServo.setPosition(0.4);
@@ -213,7 +213,7 @@ public class RobotHardware {
 
     }
     public void setAllDrivePower(double p){ setDrivePower(p,p,p,p);}
-    public void setArmPower(double armPower){
+   // public void setArmPower(double armPower){
     //   linearSlider.setPower(armPower);
     //}
 
@@ -222,7 +222,7 @@ public class RobotHardware {
 
 
 
-}}
+}
 /*
    port 1 motorfl
    port 2 motorbl
