@@ -207,9 +207,9 @@ public class RobotHardware {
             br = -1.0;
 
         motorfl.setPower(fl);
-        motorfr.setPower((-1) * fr);
-        motorbl.setPower(bl);
-        motorbr.setPower(br); //had to manually reverse (the -1 reversed it) (Line:93)
+        motorfr.setPower(fr);
+        motorbl.setPower((-1) *bl);
+        motorbr.setPower((-1)*br); //had to manually reverse (the -1 reversed it) (Line:93)
 
     }
     public void setAllDrivePower(double p){ setDrivePower(p,p,p,p);}
