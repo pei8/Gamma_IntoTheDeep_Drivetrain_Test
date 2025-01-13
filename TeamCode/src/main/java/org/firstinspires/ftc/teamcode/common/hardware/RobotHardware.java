@@ -83,8 +83,8 @@ public class RobotHardware {
         motorfl.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         motorbr.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         motorbl.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-        motorfl.setDirection(DcMotor.Direction.REVERSE);
-        motorfr.setDirection(DcMotor.Direction.REVERSE);
+       // motorbl.setDirection(DcMotor.Direction.REVERSE);
+        //motorbr.setDirection(DcMotor.Direction.REVERSE);
 
 
         // Define and initialize ALL installed servos.
@@ -208,8 +208,8 @@ public class RobotHardware {
 
         motorfl.setPower(fl);
         motorfr.setPower(fr);
-        motorbl.setPower((-1) *bl);
-        motorbr.setPower((-1)*br); //had to manually reverse (the -1 reversed it) (Line:93)
+        motorbl.setPower(bl);
+        motorbr.setPower(br); //had to manually reverse (the -1 reversed it) (Line:93)
 
     }
     public void setAllDrivePower(double p){ setDrivePower(p,p,p,p);}

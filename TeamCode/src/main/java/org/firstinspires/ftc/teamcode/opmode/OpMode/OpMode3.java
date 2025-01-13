@@ -33,9 +33,9 @@ public class OpMode3 extends LinearOpMode {
         // Put initialization blocks here.
         waitForStart();
         while (opModeIsActive()) {
-            double horizontal = gamepad1.left_stick_x * -0.5;
-            double vertical = -gamepad1.left_stick_y * 0.5;
-            double turn = gamepad1.right_stick_x * 0.5;
+            double horizontal = gamepad1.right_stick_x * 0.5;
+            double vertical = gamepad1.right_stick_y * 0.5;
+            double turn = gamepad1.left_stick_x * 0.5;
 
             robot.setDrivePower(vertical + turn + horizontal, vertical - turn - horizontal, vertical + turn - horizontal, vertical - turn + horizontal);
 
