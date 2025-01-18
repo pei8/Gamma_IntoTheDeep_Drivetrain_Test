@@ -83,7 +83,10 @@ public class RobotHardware {
         motorfl.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         motorbr.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         motorbl.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-       // motorbl.setDirection(DcMotor.Direction.REVERSE);
+        motorfr.setDirection(DcMotor.Direction.REVERSE);
+        motorbr.setDirection(DcMotor.Direction.REVERSE);
+        motorbl.setDirection(DcMotor.Direction.REVERSE);
+
         //motorbr.setDirection(DcMotor.Direction.REVERSE);
 
 
@@ -209,9 +212,9 @@ public class RobotHardware {
         motorfl.setPower(fl);
         motorfr.setPower(fr);
         motorbl.setPower(bl);
-        motorbr.setPower(br); //had to manually reverse (the -1 reversed it) (Line:93)
-
+        motorbr.setPower(br);
     }
+
     public void setAllDrivePower(double p){ setDrivePower(p,p,p,p);}
    // public void setArmPower(double armPower){
     //   linearSlider.setPower(armPower);
